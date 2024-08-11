@@ -1,0 +1,27 @@
+__init__() method
+ The __init__ method is similar to constructors in C++ and Java. Constructors are used to initializing the object’s state.
+ Like methods, a constructor also contains a collection of statements(i.e. instructions) that are executed at the time
+ of Object creation. It runs as soon as an object of a class is instantiated. The method is useful to do any
+ initialization you want to do with your object.
+
+__str__() method
+ Python has a particular method called __str__(). that is used to define how a class object should be represented as a string.
+ It is often used to give an object a human-readable textual representation, which is helpful for logging, debugging,
+ or showing users object information. When a class object is used to create a string using the built-in functions print()
+ and str(), the __str__() function is automatically used. You can alter how objects of a class are represented in strings
+ by defining the __str__() method.
+
+Class and Instance Variables
+ Instance variables are for data, unique to each instance and class variables are for attributes and methods shared by
+ all instances of the class. Instance variables are variables whose value is assigned inside a constructor or method with
+ self whereas class variables are variables whose value is assigned in the class.
+
+        class Dog:
+            # Class Variable
+            animal = 'dog'
+            # The init method or constructor
+            def __init__(self, breed, color):
+                # Instance Variable
+                self.breed = breed
+                self.color = color
+

@@ -1,0 +1,38 @@
+LIST :
+1) to add element : append(element), extend(),insert(index,element)
+    List.append()
+2) To remove element : del List[index], pop(), remove(element)
+
+3) Functions : 1 . print(sorted(List)) this will not change original list, 
+	       2.  List.sort() and List.sort(reverse=True)
+	       3.  List.index(element)
+ 	       4.  List.count(element)
+
+
+DICTIONARY :
+dict1={key1:'value1',key2:'value2'}
+1) update
+	dict1[key1]=value3 , value1 will be replaced by value3
+
+2) To add :
+	dict1[key3]=value4
+
+3) To delete :
+	del dict1[key1]
+4) 
+   	dict1.keys() , dict1.values() , dict1.items()
+
+5) to sort dic:
+	sorted_dic=sorted(dic.items(),key=lambda x:x[1]) #sort by value, to sort by key write 0 insted of 1
+
+SET :
+set1={1,2,3,4,4,4}
+
+1) To add :
+	set1.add(5) => {1,2,3,4,5}
+
+2)Functions :
+	set2={4,5,6}
+	1. print(set1.union(set2)) => {1,2,3,4,5,6}
+	2. print(set1.intersection(set2)) => {4,5}
+	3. print(set1.difference(set2)) => {1,2,3,6}
